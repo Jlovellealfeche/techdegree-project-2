@@ -1,0 +1,63 @@
+/*-----Base Styles-----*/
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 1.20em;
+}
+
+body {
+    color:black;
+    font:300 100%/1.5 'Open Sans', sans-serif;
+}
+
+.main-header, footer.main-footer {
+    background-color: whitesmoke;
+    text-align: center;
+
+}
+a:link {
+    text-decoration: none;
+}
+
+.main-nav {
+    list-style: none;
+}
+
+.port-title, h2.footer-contact {
+    text-transform: uppercase;
+}
+
+.content-wrapper {
+    text-align: center;
+}
+
+/**-----Styles------**/
+
+header {
+    margin: -1rem -1rem 1rem;
+    padding: 5vh 1rem;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+nav, ul.main-nav {
+    display: block;
+    padding: 0;
+}
+
+li {
+    background-color: white;
+    margin: 5px;
+}
+footer {
+    margin: 1rem -1rem -1rem;
+    padding: 1rem 10vh;
+}
+    
+
