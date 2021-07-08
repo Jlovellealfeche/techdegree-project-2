@@ -13,25 +13,49 @@ body {
     font:300 100%/1.5 'Open Sans', sans-serif;
 }
 
-.main-header, footer.main-footer {
+.header-wrapper {
     background-color: whitesmoke;
     text-align: center;
-
+    padding: 0 -2em 0;
 }
-a:link {
+
+p.headline{
+    padding-bottom: 1.5em;
+}
+a:link, a:visited {
     text-decoration: none;
+    color: black;
 }
 
 .main-nav {
     list-style: none;
 }
 
-.port-title, h2.footer-contact {
+#portfolio, #contact {
     text-transform: uppercase;
+    font-size: 1em;
 }
 
+.content-headings {
+    font-size: 1.1em;
+    font-weight: 200;
+}
+
+.wrapper {
+    margin: -1em;
+    text-align: center;
+}
 .content-wrapper {
     text-align: center;
+}
+
+.logo, p.headline, .section, .contact-text {
+    padding: 0 1.5em ;
+}
+
+
+.after-footerline {
+    padding: 0 1em;
 }
 
 /**-----Styles------**/
@@ -41,23 +65,123 @@ header {
     padding: 5vh 1rem;
 }
 
+
 img {
     max-width: 100%;
     height: auto;
 }
 
-nav, ul.main-nav {
-    display: block;
-    padding: 0;
+ul.main-nav {
+    padding-left: 0px;
 }
 
 li {
-    background-color: white;
-    margin: 5px;
+    
+    margin: 8px 30px;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1em;
+    font-weight: 600;
+    
+}
+
+.headline, .contact-text{
+    color: grey;
 }
 footer {
     margin: 1rem -1rem -1rem;
     padding: 1rem 10vh;
 }
+
+.main-footer {
+    padding: 0 30px;
+}
+
+.student-namebottom {
+    float: left;
+    padding-right: 2rem;
+}
+
+
+#contact{
+    padding-top: 2em;
+}
+
+/**---Media Queries---**/
+
+@media screen and (min-width: 320px) {
+
+    nav, ul.main-nav {
+        display: block;
+        padding: 0;
+        text-align: center;
+    }
+
+    li{ 
+        background-color: white;
+    }
+
+    .banner {
+        display: flex;
+        flex-direction: column;
+    }
     
 
+    .after-footerline {
+        display: flex;
+        justify-content: space-between;
+        font-weight: 600;
+        font-size: 1em;
+        position: sticky;
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    .main-header, ul.main-nav, .banner {
+        display: flex;
+    }
+    
+    .main-header {
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 1em;
+    }
+
+    li {
+        background-color: transparent;
+    }
+
+    .banner {
+        padding-bottom: 2em;
+        flex-direction: row-reverse;
+        flex: 1 3 auto;
+    }
+
+    .logo {
+        width: 46%;
+    }
+
+    div.banner, .content-wrapper {
+        padding: 1em;
+    }
+        
+    }
+
+    @media screen and (min-width: 1025px) {
+        
+        .main-header {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        h1 {
+            margin-left: 1.5em;
+            font-size: 1.5em;
+        }
+
+        nav{
+            margin-right: 1em;
+        }
+
+    }
