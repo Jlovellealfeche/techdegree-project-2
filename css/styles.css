@@ -45,14 +45,20 @@ a:link, a:visited {
     margin: -1em;
     text-align: center;
 }
+
 .content-wrapper {
     text-align: center;
+    margin: 0 5%; 
 }
 
-.logo, p.headline, .section, .contact-text {
-    padding: 0 1.5em ;
+.logo, p.headline, .contact-text {
+    padding: 1em 1em 0 1em ;
 }
 
+.col {
+
+    padding:  1em;
+}
 
 .after-footerline {
     padding: 0 1em;
@@ -127,7 +133,7 @@ footer {
     }
     
 
-    .after-footerline {
+    .after-hr {
         display: flex;
         justify-content: space-between;
         font-weight: 600;
@@ -138,10 +144,16 @@ footer {
 
 @media screen and (min-width: 768px) {
 
-    .main-header, ul.main-nav, .banner {
+
+    .main-header, ul.main-nav, .banner, .row {
         display: flex;
     }
     
+    .header-wrapper, .main-footer {
+        background-color:whitesmoke;
+        min-width: fit-content;
+    }
+
     .main-header {
         flex-direction: column;
         align-items: center;
@@ -161,9 +173,13 @@ footer {
     .logo {
         width: 46%;
     }
+    .row {
+    flex-wrap: wrap;
+   
+    }
 
-    div.banner, .content-wrapper {
-        padding: 1em;
+    .col {
+        flex: 1 50%;
     }
         
     }
