@@ -22,6 +22,7 @@ body {
 p.headline{
     padding-bottom: 1.5em;
 }
+
 a:link, a:visited {
     text-decoration: none;
     color: black;
@@ -56,7 +57,6 @@ a:link, a:visited {
 }
 
 .col {
-
     padding:  1em;
 }
 
@@ -82,13 +82,11 @@ ul.main-nav {
 }
 
 li {
-    
     margin: 8px 30px;
     text-transform: uppercase;
     text-align: center;
     font-size: 1em;
-    font-weight: 600;
-    
+    font-weight: 600;   
 }
 
 
@@ -105,7 +103,6 @@ footer {
 
 
 #contact{
-
     margin-top: 5px;
     padding-top: 5px;
 }
@@ -122,6 +119,7 @@ hr {
         font-weight: 500;
         font-size: 1.5em;
     }
+
     nav, ul.main-nav {
         display: block;
         text-align: center;
@@ -185,9 +183,9 @@ hr {
     .logo {
         width: 46%;
     }
+
     .row {
     flex-wrap: wrap;
-   
     }
 
     .col {
