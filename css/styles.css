@@ -16,7 +16,6 @@ body {
 .header-wrapper {
     background-color: whitesmoke;
     text-align: center;
-    padding: 0 -2em 0;
 }
 
 p.headline{
@@ -265,7 +264,7 @@ hr {
         }
     
         #footer-nav {
-            display: inline-flex;
+            display: flex;
             list-style: none;
             margin-top: 20px;
             font-size: .8em;
