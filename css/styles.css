@@ -91,9 +91,7 @@ li {
     
 }
 
-.headline, .contact-text{
-    color: grey;
-}
+
 footer {
     margin: .5rem -1rem -1rem;
     padding: 1rem 10vh;
@@ -219,9 +217,20 @@ hr {
 
     @media screen and (min-width: 1025px) {
         
-        .main-header {
+        .main-header, ul.main-nav {
+            display: flex;
+        }
+
+
+
+        .row {
+            display: flex;
             flex-direction: row;
-            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .col {
+            flex: 1 30%;
         }
 
         h1 {
@@ -231,6 +240,30 @@ hr {
 
         nav{
             margin-right: 1em;
+        }
+
+        .banner {
+            margin: 0 2em;
+        }
+        .headline {
+            text-align: left;
+
+        }
+
+
+        .contact-text{
+            margin: 10px 190px 40px;
+        }
+    
+        #footer-nav {
+            display: inline-flex;
+            list-style: none;
+            margin-top: 20px;
+            font-size: .8em;
+        }
+    
+        #footer-nav li {
+            margin: 0 10px;
         }
 
     }
