@@ -194,6 +194,10 @@ hr {
         flex: 1 50%;
     }
 
+    .content-headings {
+        font-weight: 500;
+    }
+
     .back-top {
         display: none;
     }
@@ -217,10 +221,14 @@ hr {
 
     @media screen and (min-width: 1025px) {
         
-        .main-header, ul.main-nav {
+        .main-header {
             display: flex;
         }
 
+        .main-header {
+            flex-direction: row;
+            justify-content: space-between;
+        }
 
 
         .row {
@@ -245,11 +253,14 @@ hr {
         .banner {
             margin: 0 2em;
         }
+
         .headline {
             text-align: left;
-
         }
 
+        .content-headings {
+            font-weight: 500;
+        }
 
         .contact-text{
             margin: 10px 190px 40px;
