@@ -11,6 +11,7 @@ html {
 body {
     color:black;
     font:300 100%/1.5 'Open Sans', sans-serif;
+    margin: 0;
 }
 
 .header-wrapper {
@@ -42,7 +43,6 @@ a:link, a:visited {
 }
 
 .wrapper {
-    margin: -1em;
     text-align: center;
 }
 
@@ -66,10 +66,28 @@ a:link, a:visited {
 /**-----Styles------**/
 
 header {
-    margin: -1rem -1rem 1rem;
     padding: 5vh 1rem;
 }
 
+h1 {
+    font-weight: 500;
+    font-size: 1.5em;
+}
+
+nav, ul.main-nav {
+    display: block;
+    text-align: center;
+    font-size: .9em;
+}
+
+li{ 
+    background-color: white;
+}
+
+.banner {
+    display: flex;
+    flex-direction: column;
+}
 
 img {
     max-width: 100%;
@@ -90,7 +108,6 @@ li {
 
 
 footer {
-    margin: .5rem -1rem -1rem;
     padding: 1rem 10vh;
 }
 
@@ -106,50 +123,25 @@ footer {
     padding-top: 5px;
 }
 
+.main-footer {
+    background-color:whitesmoke;
+}
 hr {
     margin-top: 3em;
 }
+.after-hr {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+    font-size: 1em;
+    position: sticky;
+}
+
+#footer-nav {
+    display: none; 
+}
 
 /**---Media Queries---**/
-
-@media screen and (min-width: 320px) {
-
-    h1 {
-        font-weight: 500;
-        font-size: 1.5em;
-    }
-
-    nav, ul.main-nav {
-        display: block;
-        text-align: center;
-        font-size: .9em;
-    }
-
-    li{ 
-        background-color: white;
-    }
-
-    .banner {
-        display: flex;
-        flex-direction: column;
-    }
-    
-    .main-footer {
-        background-color:whitesmoke;
-    }
-
-    .after-hr {
-        display: flex;
-        justify-content: space-between;
-        font-weight: 600;
-        font-size: 1em;
-        position: sticky;
-    }
-
-    #footer-nav {
-       display: none; 
-    }
-}
 
 @media screen and (min-width: 768px) {
 
@@ -216,7 +208,7 @@ hr {
         
     }
 
-    @media screen and (min-width: 1025px) {
+    @media screen and (min-width: 1024px) {
         
         .main-header {
             display: flex;
