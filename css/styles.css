@@ -95,13 +95,10 @@ li {
     color: grey;
 }
 footer {
-    margin: 1rem -1rem -1rem;
+    margin: .5rem -1rem -1rem;
     padding: 1rem 10vh;
 }
 
-.main-footer {
-    padding: 0 30px;
-}
 
 .student-namebottom {
     float: left;
@@ -110,17 +107,27 @@ footer {
 
 
 #contact{
-    padding-top: 2em;
+
+    margin-top: 5px;
+    padding-top: 5px;
+}
+
+hr {
+    margin-top: 3em;
 }
 
 /**---Media Queries---**/
 
 @media screen and (min-width: 320px) {
 
+    h1 {
+        font-weight: 500;
+        font-size: 1.5em;
+    }
     nav, ul.main-nav {
         display: block;
-        padding: 0;
         text-align: center;
+        font-size: .9em;
     }
 
     li{ 
@@ -132,6 +139,9 @@ footer {
         flex-direction: column;
     }
     
+    .main-footer {
+        background-color:whitesmoke;
+    }
 
     .after-hr {
         display: flex;
@@ -139,6 +149,10 @@ footer {
         font-weight: 600;
         font-size: 1em;
         position: sticky;
+    }
+
+    #footer-nav {
+       display: none; 
     }
 }
 
@@ -180,6 +194,25 @@ footer {
 
     .col {
         flex: 1 50%;
+    }
+
+    .back-top {
+        display: none;
+    }
+
+    .contact-text{
+        margin: 10px 80px 40px;
+    }
+
+    #footer-nav {
+        display: inline-flex;
+        list-style: none;
+        margin-top: 20px;
+        font-size: .8em;
+    }
+
+    #footer-nav li {
+        margin: 0 10px;
     }
         
     }
