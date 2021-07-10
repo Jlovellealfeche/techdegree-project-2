@@ -10,7 +10,6 @@ html {
 
 body {
     color:black;
-    background-color: whitesmoke;
     font:300 100%/1.5 'Open Sans', sans-serif;
     margin: 0;
 }
@@ -44,7 +43,7 @@ a:link, a:visited {
 
 .content-headings {
     font-size: 1.1em;
-    font-weight: 200;
+    font-weight: 400;
 }
 
 .wrapper {
@@ -52,14 +51,13 @@ a:link, a:visited {
 }
 
 .content-wrapper {
-    background-color: rgba(255,255,255, 0.4);
     text-align: center;
     margin: 1em; 
     padding: 1.5em 30px;
 }
 
 .headline {
-    padding-left: 1.5em;
+    padding: 1em;
 }
 .logo, .contact-text {
     padding: 1em 1em 0 1em ;
@@ -126,7 +124,7 @@ footer {
     padding-right: 2rem;
 }
 
-.main-footer {
+.header-wrapper, .main-footer {
     background-color:whitesmoke;
 }
 hr {
@@ -139,7 +137,6 @@ hr {
     font-weight: 600;
     font-size: 1em;
     position: sticky;
-    padding: 0 2.5em;
 }
 
 #footer-nav {
@@ -212,6 +209,10 @@ hr {
     #footer-nav li {
         margin: 0 10px;
     }
+
+    .after-hr {
+        padding: 0 2.5em;
+    }
         
     }
 
@@ -251,6 +252,10 @@ hr {
             text-align: left;
         }
 
+        .content-wrapper {
+            background-color: rgba(255,255,255, 0.4);
+        }
+
         .content-headings {
             font-weight: 500;
         }
@@ -275,4 +280,7 @@ hr {
             margin: 0 10px;
         }
 
+        .after-hr {
+            padding: 0 2.5em;
+        }
     }
