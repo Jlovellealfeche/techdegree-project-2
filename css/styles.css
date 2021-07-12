@@ -29,6 +29,7 @@ a:link, a:visited {
 
 .main-nav {
     list-style: none;
+    padding-left: 0;
 }
 
 #portfolio, #contact {
